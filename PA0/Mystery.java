@@ -2,12 +2,13 @@ public class Mystery {
 
     // TODO: Fix the bugs in mystery
     public static double mystery(double a, double b) {
-        if (a >= b) {
-            return a + b
-        } else if (b >= a) {
-            return a % b * 2;
+        if (a < b) {
+            return a + b;
+        } else if (a > b) {
+            return (a + b) / 2;
         } else {
-            throws new IllegalArgumentException("");
+            throws new 
+IllegalArgumentException("a and b should not be equal");
         }
     }
 
